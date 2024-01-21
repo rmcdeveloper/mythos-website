@@ -1,0 +1,21 @@
+@use 'sass:math';
+
+@function rem($pixel) {
+	$basefont: 16;
+
+	@if math.is-unitless($pixel) {
+		@return math.div($pixel, $basefont) + rem;
+	}
+
+	@error 'Only numbers should be used for rem units';
+}
+
+@function em($pixel) {
+	$basefont: 16;
+
+	@if math.is-unitless($pixel) {
+		@return math.div($pixel, $basefont) + em;
+	}
+
+	@error 'Only numbers should be used for em units';
+}

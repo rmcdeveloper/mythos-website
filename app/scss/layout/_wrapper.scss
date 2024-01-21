@@ -1,0 +1,9 @@
+@use '../utils' as utils;
+
+.wrapper {
+	width: min(
+		100% - utils.rem(48),
+		utils.rem(1200)
+	); // use this function to define how is going to be the width of the page, it takes first parameter as the minimun viewport and the second as the max
+	margin-inline: auto;
+}
