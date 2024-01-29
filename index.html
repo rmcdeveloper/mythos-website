@@ -20,8 +20,39 @@
 		<script src="/app/js/script.js"></script>
 	</head>
 	<body>
-		<header></header>
-		<main>
+		<!-- Skip link to navigate to the website with ID of main. Usually works for accessibility porpuses -->
+		<a href="#main" class="visually-hidden">Skip to main content</a>
+		<header class="topnav">
+			<!-- Create a Hidden tag for the header of the top navigation for accessibility  -->
+			<h2 class="visually-hidden">Header</h2>
+			<div class="wrapper topnav__wrapper">
+				<!-- the forward slash loads only the domain -->
+				<a href="/" class="topnav__homelink">
+					<!-- Add width and height for image tags is a good practice, avoid jumping when the image is loaded-->
+					<img
+						src="/img/logo-mythos.svg"
+						alt="Mythos homepage"
+						class="topnav__logo"
+						width="128"
+						height="36"
+					/>
+				</a>
+				<nav>
+					<ul class="topnav__links">
+						<li class="topnav__item">
+							<a href="" class="topnav__link">Features</a>
+						</li>
+						<li class="topnav__item">
+							<a href="" class="topnav__link">Pricing</a>
+						</li>
+						<li class="topnav__item">
+							<a href="" class="topnav__link">About</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main id="main">
 			<article>
 				<section class="wrapper">
 					<h1>Find that elusive unicorn.</h1>

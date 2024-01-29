@@ -25,4 +25,15 @@ body {
 	width: 1px;
 	height: 1px;
 	overflow: hidden;
+
+	// This is a pseudo-class - it helps to see how the element looks when ou change a certain way
+	// This is the style for the skip link
+	&:focus {
+		left: 0;
+		width: auto;
+		height: auto;
+		background-color: #fff;
+		padding: 0.5em;
+		border: 1px solid;
+	}
 }
